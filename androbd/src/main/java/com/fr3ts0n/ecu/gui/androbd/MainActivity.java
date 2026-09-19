@@ -1690,14 +1690,23 @@ public class MainActivity extends PluginManager
         getWindow().getDecorView().setBackgroundColor(Color.TRANSPARENT);
     }
 
-    private void setNumCodes(int newNumCodes)
+    private void applyObdBackground(int drawableId)
     {
-        // Keep the OBD data surface free of decorative image backgrounds.
         View list = findViewById(R.id.obd_list);
         if (list != null)
         {
-            list.setBackgroundColor(Color.TRANSPARENT);
+            Drawable background = getResources().getDrawable(drawableId);
+            background.setAlpha(Math.round(255 * 0.70f));
+            list.setBackground(background);
         }
+    }
+
+    private void setNumCodes(int newNumCodes)
+    {
+        // Keep the MIL image visible but dimmed so OBD values remain readable.
+        applyObdBackground((newNumCodes & 0x80) != 0
+                ? R.drawable.mil_on
+                : R.drawable.mil_off);
         // enable / disable freeze frames based on number of codes
         setMenuItemEnable(R.id.service_freezeframes, (newNumCodes != 0));
     }
@@ -2334,6 +2343,7 @@ public class MainActivity extends PluginManager
 
         // set list view
         setContentView(mListView);
+        applyObdBackground(R.drawable.mil_off);
         getListView().setOnItemLongClickListener(this);
         getListView().setMultiChoiceModeListener(this);
         getListView().setChoiceMode(ListView.CHOICE_MODE_SINGLE);
