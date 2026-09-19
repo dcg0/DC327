@@ -81,3 +81,50 @@
 ```bash
 chmod +x gradlew
 ./gradlew clean test assembleDebug
+```
+
+---
+
+## 🌙 Galería nocturna y descargas
+
+![Portada nocturna DC-ELM327](portadanoche.png)
+
+La portada nocturna representa la versión principal de **DC-ELM327** y se utiliza también como referencia visual del proyecto.
+
+### 1. DC-ELM327 Debug v2.7.10
+
+![DC-ELM327 Debug](portadanoche.png)
+
+- **Descarga directa:** [DC-ELM327-debug.apk](https://github.com/dcg0/DC-ELM327/releases/download/v2.7.10-debug/DC-ELM327-debug.apk)
+- **Release:** [v2.7.10-debug](https://github.com/dcg0/DC-ELM327/releases/tag/v2.7.10-debug)
+- **Repositorio:** [dcg0/DC-ELM327](https://github.com/dcg0/DC-ELM327)
+
+### 2. DC-ELM327 HC v0.1.0
+
+![DC-ELM327 HC](portadanoche.png)
+
+- **Descarga directa:** [app-release.apk](https://github.com/dcg0/DC-elm327HC/releases/download/v0.1.0/app-release.apk)
+- **Release:** [v0.1.0](https://github.com/dcg0/DC-elm327HC/releases/tag/v0.1.0)
+- **Repositorio:** [dcg0/DC-elm327HC](https://github.com/dcg0/DC-elm327HC)
+
+### 3. DCecuelm327 Debug build-1
+
+![DCecuelm327 Debug](logonoche.png)
+
+- **Descarga directa:** [androbd-debug.apk](https://github.com/dcg0/DCecuelm327/releases/download/build-1/androbd-debug.apk)
+- **Release:** [build-1](https://github.com/dcg0/DCecuelm327/releases/tag/build-1)
+- **Repositorio:** [dcg0/DCecuelm327](https://github.com/dcg0/DCecuelm327)
+
+## 📊 Tabla rápida de descargas
+
+| # | Proyecto | APK | Enlace |
+|---:|---|---|---|
+| 1 | DC-ELM327 Debug | `DC-ELM327-debug.apk` | [Descargar](https://github.com/dcg0/DC-ELM327/releases/download/v2.7.10-debug/DC-ELM327-debug.apk) |
+| 2 | DC-ELM327 HC | `app-release.apk` | [Descargar](https://github.com/dcg0/DC-elm327HC/releases/download/v0.1.0/app-release.apk) |
+| 3 | DCecuelm327 Debug | `androbd-debug.apk` | [Descargar](https://github.com/dcg0/DCecuelm327/releases/download/build-1/androbd-debug.apk) |
+
+## 🔗 Enlaces principales
+
+- [Repositorio público DC327](https://github.com/dcg0/DC327)
+- [Página web DC-carECU](https://dcg0.github.io/DC-carECU/)
+- [Repositorio DC-carECU](https://github.com/dcg0/DC-carECU)
