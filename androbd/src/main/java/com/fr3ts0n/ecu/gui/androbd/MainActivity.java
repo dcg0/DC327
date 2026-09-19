@@ -1687,18 +1687,16 @@ public class MainActivity extends PluginManager
 
         // Set display theme based on specified mode
         setTheme(nightMode ? R.style.AppTheme_Dark : R.style.AppTheme);
-        getWindow().getDecorView().setBackgroundColor(nightMode ? Color.BLACK : Color.WHITE);
+        getWindow().getDecorView().setBackgroundColor(Color.TRANSPARENT);
     }
 
     private void setNumCodes(int newNumCodes)
     {
-        // set list background based on MIL status
+        // Keep the OBD data surface free of decorative image backgrounds.
         View list = findViewById(R.id.obd_list);
         if (list != null)
         {
-            list.setBackgroundResource((newNumCodes & 0x80) != 0
-                    ? R.drawable.mil_on
-                    : R.drawable.mil_off);
+            list.setBackgroundColor(Color.TRANSPARENT);
         }
         // enable / disable freeze frames based on number of codes
         setMenuItemEnable(R.id.service_freezeframes, (newNumCodes != 0));
